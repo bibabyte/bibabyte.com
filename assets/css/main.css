@@ -50,6 +50,11 @@ body {
 
 ol, ul {
 	list-style: none;
+	text-align: left;
+}
+
+cite {
+	font-size: .75em;
 }
 
 blockquote, q {
@@ -2005,6 +2010,7 @@ input, select, textarea {
 			margin-top: 0;
 		}
 
+
 /* Form */
 
 	form {
@@ -2917,6 +2923,7 @@ input, select, textarea {
 			padding: 5em 2.5em 3em 2.5em ;
 			background: rgba(254, 247, 255, 0.95);
 			box-shadow: inset 0 1px 0 0 #dddddd;
+			align-items: center;
 		}
 
 		#footer footer {
