@@ -2312,16 +2312,16 @@ input, select, textarea {
 		padding: 5px;
 	}
 	
-	.portfolio .image {
-		object-fit: cover;
-		transition: 2s ease-out;
-		border-radius: 3px;
-	}
-	
-	.portfolio .image:hover {
-		transform: scale(1.05);
-		cursor: pointer;
-	}
+		.portfolio .image {
+			object-fit: cover;
+			transition: 2s ease-out;
+			border-radius: 3px;
+		}
+		
+			.portfolio .image:hover {
+				transform: scale(1.05);
+				cursor: pointer;
+			}
 
 /* List */
 
@@ -2333,6 +2333,12 @@ input, select, textarea {
 
 		ol li {
 			padding-left: 0.25em;
+		}
+
+		.why_us li {
+			color: var(--main);
+			text-align: left;
+			font-weight: 600;
 		}
 
 	ul {
