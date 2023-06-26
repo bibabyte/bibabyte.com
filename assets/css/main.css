@@ -2333,6 +2333,7 @@ input, select, textarea {
 
 		ol li {
 			padding-left: 0.25em;
+			text-align: left;
 		}
 
 		.why_us li {

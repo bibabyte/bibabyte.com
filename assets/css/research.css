@@ -13,11 +13,42 @@
 
 
 
-.benefit {
+p {
     padding: .5em .2em .5em .2em;
 }
 
-.benefit:hover {
+
+p:hover {
     background-color: var(--super-light);
     
 }
+
+.benefit-res {
+    display: none;
+    right: 1%;
+    position: absolute;
+    top: 22px;  /* 312px;*/
+    width: 325px;
+    z-index: 10;
+   background: var(--super-light);
+  /* border: 2px solid var(--background); */
+  /* border-radius: 5px; */
+  font-size: 0.9375em;
+  /* 18px/19.2 */
+  padding: 15px;
+  /* box-shadow: 4px 4px 10px  var(--light); */
+  margin: 2em;
+}
+
+.benefit-res2 {
+top: 200px;
+}
+
+.benefit-res {
+    text-justify: left;
+}
+
+.research:hover .benefit-res {
+    display: block;
+  }
+
