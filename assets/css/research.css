@@ -1,0 +1,23 @@
+:root {
+	--background: #f282c2; 	/*lighter than main*/
+	--main: #eb3c9f;		/*brand main color*/
+	--light: #f9c2e1;		/*lighter than background*/
+	--super-light: #fce1f1;	/*lightest*/	
+	--medium: #b62e7b;		/*darker than main*/
+	--dark: #942564;		/*pretty dark*/
+	--link: #f282c2;		/*same as background*/	
+	
+	--text: #6f7577;		/*greyish*/
+	--bold-text: #707577;	/*darker greyish*/
+}
+
+
+
+.benefit {
+    padding: .5em .2em .5em .2em;
+}
+
+.benefit:hover {
+    background-color: var(--super-light);
+    
+}
