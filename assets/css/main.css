@@ -2904,10 +2904,6 @@ input, select, textarea {
 
 	#ham {
 		border-radius: 50%;
-		/* padding-right: 0.28em;
-		padding-left: 0.3em;
-		padding-bottom: 0.1em;
-		padding-top: 0em; */
 		width: 3px;
 		margin-top: 0px;
 		height: 1em;
@@ -2917,7 +2913,6 @@ input, select, textarea {
 	#ham, #noHam {
 		font-size: 2.5em;
 		cursor: pointer;
-		/* background-color: var(--main); */
 		text-align: right;
 		color: var(--main);
 	}
@@ -2936,9 +2931,10 @@ input, select, textarea {
 		display: none;
 	}
 
-	ol {
+	.menuContent {
 		transition-property: width;
 		transition-duration: .3s;
+		border: #eb3c9f;
 	}
 
 	/* menu default not-expanded */
@@ -2955,7 +2951,7 @@ input, select, textarea {
 
 	input[type=checkbox]:checked ~ ol::after {
 		content: '';
-		padding-right: 50vw;
+		/* padding-right: 50vw; */
 		height: 33px;
 		width: 50vw;
 		background-color: var(--main);
@@ -2986,7 +2982,7 @@ input, select, textarea {
 
 	nav a {
 		transition-property: font-size; 
-		transition-duration: .5s;
+		transition-duration: .2s;
 		transition-timing-function: ease-in-out;
 		width: 50vw; 
 		font-size: 1.5em;
@@ -2997,11 +2993,17 @@ input, select, textarea {
 		margin: 0;
 	}
 
+	#nav_menu {
+		background-image: url("../../images/bg.jpg");
+	}
+
 	nav li {
 		display: block;
-		background-color: var(--main);
+		
 		position: relative;
 		z-index: 500;
+		border: var(--background);
+		border-width: 2px;
 	}
 
 	nav li a {
