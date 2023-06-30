@@ -2327,12 +2327,12 @@ input, select, textarea {
 	
 		.portfolio .image {
 			object-fit: cover;
-			transition: 2s ease-out;
+			transition: .2s ease-out;
 			border-radius: 3px;
 		}
 		
 			.portfolio .image:hover {
-				transform: scale(1.05);
+				transform: scale(1.1);
 				cursor: pointer;
 			}
 
