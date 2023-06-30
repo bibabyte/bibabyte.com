@@ -2898,14 +2898,6 @@ input, select, textarea {
 		width: 100vw;
 	}
 
-	.topL {
-		height: 5em;
-		width: auto;
-		background-color: var(--main-lt-color);
-		padding: .5em 0 0 .5em;
-		border-radius: 0 0 28pt 0;
-	}
-
 	#logo-img:hover, #ham:hover {
 		opacity: .6;
 	}
