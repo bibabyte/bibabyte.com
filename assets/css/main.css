@@ -2049,7 +2049,7 @@ input, select, textarea {
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background: rgba(144, 144, 144, 0.15);
+		/* background: rgba(144, 144, 144, 0.15); */
 		border-radius: 0;
 		border: none;
 		color: inherit;
@@ -2153,7 +2153,7 @@ input, select, textarea {
 
 			input[type="checkbox"] + label:before,
 			input[type="radio"] + label:before {
-				background: rgba(144, 144, 144, 0.15);
+				/* background: rgba(144, 144, 144, 0.15); */
 				content: '';
 				display: inline-block;
 				font-size: 0.8em;
@@ -2885,6 +2885,161 @@ input, select, textarea {
 			.reference {
 				text-align: left;
 			}
+
+
+/* Logo + NAV */
+	#logo {
+		position: sticky;
+		top: 0;
+		display: flex;
+		justify-content: space-between;
+		color: var(--main-lt-color);
+		z-index: 10;
+		width: 100vw;
+	}
+
+	.topL {
+		height: 5em;
+		width: auto;
+		background-color: var(--main-lt-color);
+		padding: .5em 0 0 .5em;
+		border-radius: 0 0 28pt 0;
+	}
+
+	#logo-img:hover, #ham:hover {
+		opacity: .6;
+	}
+
+	#ham {
+		border-radius: 50%;
+		/* padding-right: 0.28em;
+		padding-left: 0.3em;
+		padding-bottom: 0.1em;
+		padding-top: 0em; */
+		width: 3px;
+		margin-top: 0px;
+		height: 1em;
+		margin: 0;
+	}
+
+	#ham, #noHam {
+		font-size: 2.5em;
+		cursor: pointer;
+		/* background-color: var(--main); */
+		text-align: right;
+		color: var(--main);
+	}
+
+	#noHam {
+		display: none;
+		border-radius: 0;
+	}
+
+	.contrast_bg {
+		/* background-color: var(--main); */
+	}
+			/* semantics below adjust the 'weight' of the item (see: https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) */
+	/* actual box not visible */
+	input[type=checkbox] {
+		display: none;
+	}
+
+	ol {
+		transition-property: width;
+		transition-duration: .3s;
+	}
+
+	/* menu default not-expanded */
+	input[type=checkbox] ~ ol{
+		display: none;
+		width: 0;
+	}
+
+	/* menu expand on click */
+	input[type=checkbox]:checked ~ ol {
+		display: block;
+		width: 50vw;
+	}
+
+	input[type=checkbox]:checked ~ ol::after {
+		content: '';
+		padding-right: 50vw;
+		height: 33px;
+		width: 50vw;
+		background-color: var(--main);
+		border-radius: 0 0 33px 33px;
+	}     
+
+	input[type=checkbox]:checked ~ #ham {
+		display: none;
+	}
+
+	input[type=checkbox]:checked ~ #noHam {
+		display: block;
+		border-radius: 33px 33px 0 0;
+	}
+
+
+
+	nav {
+		margin: 0;
+		padding: 1.3em .8em 0.6em .4em;
+		border-radius: 0 0 0 33px;
+		position: absolute;
+		right: 0;
+		line-height: 0;
+		right: 20px;
+		top: 0px;
+	}
+
+	nav a {
+		transition-property: font-size; 
+		transition-duration: .5s;
+		transition-timing-function: ease-in-out;
+		width: 50vw; 
+		font-size: 1.5em;
+	}
+
+	nav ol {
+		padding: 0;
+		margin: 0;
+	}
+
+	nav li {
+		display: block;
+		background-color: var(--main);
+		position: relative;
+		z-index: 500;
+	}
+
+	nav li a {
+		display: block;
+		height: 1em;
+		text-decoration: none;
+		color: var(--main-color);
+		text-align: left;
+		padding: .75em;
+	}
+
+	nav a:hover {
+		text-decoration: none;
+		font-size: 1.8em;
+		color: var(--contrast-color);
+		position: inherit;
+		opacity: 1;
+	}
+
+	#logo a {
+		text-decoration: none;
+		border-bottom: none;
+	}
+
+
+/* END LOGO + NAV */
+
+
+
+
 /* Header */
 
 	#header {
@@ -2898,13 +3053,12 @@ input, select, textarea {
 			display: inline-block;
 			height: 100vh;
 			vertical-align: middle;
-			
 		}
 
 		#header header {
 			color: var(--dark);
 			display: inline-block;
-			padding-bottom: 8em;
+			padding-bottom: 5em;
 			vertical-align: middle;
 		}
 
@@ -2917,7 +3071,7 @@ input, select, textarea {
 			}
 
 				#header header a:hover {
-					color: RGBA(255, 255, 255, 1) !important;
+					color: var(--main) !important;
 					opacity: 1;
 				}
 
@@ -2954,6 +3108,9 @@ input, select, textarea {
 			#header .container .button {
 				min-width: 12em;
 			}
+
+		/* END HEADER */
+		
 
 /* Footer */
 #footer {
