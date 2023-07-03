@@ -34,6 +34,7 @@ $('#nav-menu').click(function(){
 	if(e.target.id != 'menuContent'){
 	   document.body.removeEventListener('click', boxCloser, false);
 	   $('#menuContent').hide();
+	   closeIcon.checked = false;
 	}
   }
 

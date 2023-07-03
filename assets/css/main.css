@@ -17,6 +17,7 @@
 	--link: #f282c2;		/*same as background*/	
 	
 	--text: #7b5e6f;		/*greyish pink*/
+	--text-light: #a8b0b3;	/*light grey*/
 	--bold-text: #6c4e5f;	/*darker greyish pink*/
 	--after: #eacedf;		/*grey-pink for section seperations*/
 }
@@ -73,18 +74,6 @@ table {
 
 body {
 	-webkit-text-size-adjust: none;
-}
-
-#logo {
-	position: sticky;
-	top: 0;
-}
-
-#logo-img {
-	height: 10vw;
-	position: sticky;
-	top: 10vw;
-	
 }
 
 mark {
@@ -1975,7 +1964,7 @@ input, select, textarea {
 	}
 
 	header p {
-		color: #a8b0b3;
+		color: var(--text-light);
 		letter-spacing: 0.05em;
 		text-transform: uppercase;
 	}
@@ -2896,14 +2885,21 @@ input, select, textarea {
 
 
 /* Logo + NAV */
+
 	#logo {
 		position: sticky;
 		top: 0;
 		display: flex;
 		justify-content: space-between;
 		color: var(--main-lt-color);
-		z-index: 10;
 		width: 100vw;
+	}
+	
+	#logo-img {
+		height: 10vw;
+		position: sticky;
+		top: 10vw;
+		
 	}
 
 	#logo-img:hover, #ham:hover {
