@@ -2893,6 +2893,7 @@ input, select, textarea {
 		justify-content: space-between;
 		color: var(--main-lt-color);
 		width: 100vw;
+		z-index: 11;
 	}
 	
 	#logo-img {
@@ -2941,7 +2942,7 @@ input, select, textarea {
 		transition-property: width;
 		transition-duration: .3s;
 		border: #eb3c9f;
-				background-image: url("../../images/bg.jpg");
+		background-image: url("../../images/bg.jpg");
 
 	}
 
@@ -3000,10 +3001,6 @@ input, select, textarea {
 	nav ol {
 		padding: 0;
 		margin: 0;
-	}
-
-	#nav-menu {
-		/* background-image: url("../../images/bg.jpg"); */
 	}
 
 	nav li {
