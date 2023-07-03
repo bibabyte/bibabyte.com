@@ -2890,6 +2890,10 @@ input, select, textarea {
 				text-align: left;
 			}
 
+		.padding-bottom {
+			padding-bottom: 5em;
+		}
+
 
 /* Logo + NAV */
 	#logo {
@@ -3002,7 +3006,7 @@ input, select, textarea {
 		margin: 0;
 	}
 
-	#nav_menu {
+	#nav-menu {
 		/* background-image: url("../../images/bg.jpg"); */
 	}
 
@@ -3267,6 +3271,10 @@ input, select, textarea {
 				background-position: /*top center,*/					center center;
 				background-repeat: 	/*none,			*/			none;
 				background-size:  /*200vw,			*/			cover;
+			}
+
+			.menu {
+				font-size: .75em;
 			}
 
 		/* Main */

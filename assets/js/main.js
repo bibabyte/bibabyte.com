@@ -4,6 +4,41 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
+// TO CLOSE THE MENU AFTER CLICING A SAME-PAGE-ITEM
+var menu = document.getElementById('nav-menu');
+
+var closeIcon = document.getElementById("menuTog");
+
+
+    menu.addEventListener('click', handleMenuClick);
+
+    menu.addEventListener('touch', handleMenuClick);
+
+    function handleMenuClick(event) {
+        if (event.target instanceof HTMLAnchorElement){
+            closeIcon.checked = false;
+        }
+      }
+
+// TO CLOSE THE MENU AFTER CLICKING OUTSIDE THE MENU
+$('#nav-menu').click(function(){
+
+	$('#menuContent').show(function(){
+	  document.body.addEventListener('click', boxCloser, false);
+	});
+  
+  });
+  
+  function boxCloser(e){
+	if(e.target.id != 'menuContent'){
+	   document.body.removeEventListener('click', boxCloser, false);
+	   $('#menuContent').hide();
+	}
+  }
+
+
+
 (function($) {
 
 	var	$window = $(window),
