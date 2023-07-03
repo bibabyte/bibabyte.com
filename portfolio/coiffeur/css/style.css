@@ -287,6 +287,10 @@ footer a:hover {
             background-color: var(--main-color);
         }
 
+        td {
+            vertical-align: bottom;
+        }
+
 
     
 
@@ -440,12 +444,12 @@ footer a:hover {
     }
     #services {
         padding: 3em 7em 3em 7em;
-        margin: 0 20em 0 5em;
+        margin: 20em 10em 0 10em;
         border-radius: 10px;
     }
     #aboutUs {
         padding: 3em 5em 3em 5em;
-        margin: 20em 5em 0 20em;
+        margin: 20em 10em 0 10em;
         border-radius: 10px;
     }
     #other {
