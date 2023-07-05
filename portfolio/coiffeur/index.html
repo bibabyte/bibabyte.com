@@ -27,18 +27,15 @@
             <ol id="menuContent">
                 <!-- <li class="menu"><a href="#hours">Hours</a></li> -->
                 <li class="menu">
-                   <!-- A modal dialog to display hours -->
+                   <!-- A modal dialog containing a form -->
                     <dialog id="hours">
-                        <p>
-                            <label>
-                                <p>
-                                    Hours: du mardi au samedi 10h30-19h30
-                                </p>
-                            </label>
-                        </p>
-                        <div>
-                            <button value="close" formmethod="dialog">Close</button>
-                        </div>
+                        <form>
+                            <p>
+                                Hours: du mardi au samedi 10h30-19h30
+                            </p>
+                            <div>
+                                <button value="cancel" formmethod="dialog">Close</button>
+                            </div>
                         </form>
                     </dialog>
                     <p>
@@ -49,21 +46,20 @@
                 <li class="menu"><a href="#services">Prestations et Tarifs</a></li>
                 <li class="menu"><a href="#aboutUs">Concept</a></li>
                 <li class="menu">
-                     <!-- A modal dialog to display location -->
-                     <dialog id="hours">
+                    <dialog id="location">
                         <form>
                         <p>
-                            Location:
-                            <a href='https://www.google.com/maps/place/12+Rue+Marie+et+Louise,+75010+Paris/@48.8720847,2.3643842,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66e0a3f4f73e1:0x57d53d5992b0e21c!8m2!3d48.8720847!4d2.3665782!16s%2Fg%2F11c3q3hj3x'>12 rue Marie et Louise <br>
-                                75010  Paris</a>
+                            <label>
+                                Location
+                            </label>
                         </p>
-                        <button value="close" formmethod="dialog"> 
-                            Close
-                        </button>
+                        <div>
+                            <button value="cancel" formmethod="dialog">Close</button>
+                        </div>
                         </form>
                     </dialog>
                     <p>
-                        <button id="showDialog">Location</button>
+                        <button id="showDialog2">Location</button>
                     </p>
                     <output></output>
                 </li>

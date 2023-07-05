@@ -88,6 +88,7 @@ footer a:hover {
 
         #menu ol {
             font-size: 1em;
+            border-radius: 0 0 10px 0;
         }
 
         /* actual box not visible */
@@ -126,6 +127,10 @@ footer a:hover {
 
         nav p {
             margin: 0;
+        }
+
+        nav li:last-child {
+            border-radius: 0 0 10px 0;
         }
 
         nav li button {
@@ -171,6 +176,11 @@ footer a:hover {
             height: 3em;
         }
 
+        dialog {
+            width: 90vw;
+            height: 90vh;
+            align-items: center;
+        }
 
 /* NEXT SECTION */
 
@@ -450,6 +460,10 @@ footer a:hover {
         grid-column-end: 4;
         grid-row: 5;
     }
+    dialog {
+        width: 50vw;
+        height: 70vh;
+    }
 }
 /* tablets landscape */
 /* @media  (min-width: 768px) {
@@ -479,6 +493,10 @@ footer a:hover {
     }
     footer {
         margin-top: 15em;
+    }
+    dialog {
+        width: 50vw;
+        height: 50vh;
     }
 }
 /* large screens */

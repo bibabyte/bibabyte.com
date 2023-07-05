@@ -21,11 +21,11 @@ var closeIcon = document.getElementById("menuTog");
 
 // POPUP on menu click
 
-function hours() {
-    closeIcon.checked = false;
-    alert("du mardi au samedi 10h30-19h30");
+// function hours() {
+//     closeIcon.checked = false;
+//     alert("du mardi au samedi 10h30-19h30");
    
-}
+// }
 
 // function findUs() {
 //     closeIcon.checked = false;
@@ -37,8 +37,10 @@ function hours() {
 //ALT POPUP
 
 const showButton = document.getElementById("showDialog");
+const showButton2 = document.getElementById("showDialog2");
 const favDialog = document.getElementById("hours");
-const outputBox = document.querySelector("output");
+const favDialog2 = document.getElementById("location");
+// const outputBox = document.querySelector("output");
 // const selectEl = favDialog.querySelector("select");
 // const confirmBtn = favDialog.querySelector("#confirmBtn");
 
@@ -47,18 +49,10 @@ showButton.addEventListener("click", () => {
   favDialog.showModal();
 });
 
-// "Favorite animal" input sets the value of the submit button
-// selectEl.addEventListener("change", (e) => {
-//   confirmBtn.value = selectEl.value;
-// });
-
-// "Cancel" button closes the dialog without submitting because of [formmethod="dialog"], triggering a close event.
-favDialog.addEventListener("close", (e) => {
-  outputBox.value =
-    favDialog.returnValue === "default"
-      ? "No return value."
-      : `ReturnValue: ${favDialog.returnValue}.`; // Have to check for "default" rather than empty string
+showButton2.addEventListener("click", () => {
+    favDialog2.showModal();
 });
+
 
 // Prevent the "confirm" button from the default behavior of submitting the form, and close the dialog with the `close()` method, which triggers the "close" event.
 // confirmBtn.addEventListener("click", (event) => {
