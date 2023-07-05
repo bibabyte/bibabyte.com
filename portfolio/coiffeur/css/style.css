@@ -124,9 +124,13 @@ footer a:hover {
 
         }
 
-        nav button {
+        nav p {
+            margin: 0;
+        }
+
+        nav li button {
             width: 100%;
-            padding: .5em;
+            padding: .75em;
             text-align: left;
         }
         
