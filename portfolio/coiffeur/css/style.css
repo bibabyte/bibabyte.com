@@ -123,24 +123,36 @@ footer a:hover {
             transition: all ease-in-out;
 
         }
-        nav li {
+
+        nav button {
+            width: 100%;
+            padding: .5em;
+            text-align: left;
+        }
+        
+        nav li, nav button {
             display: block;
             background-color: var(--contrast-color);
             position: relative;
             z-index: 500;
+            color: var(--main-color);
+            font-size: 1em;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+            border: none;
         }
 
-        nav li a {
+        nav li a, nav button a {
             display: block;
             height: 1em;
-            /* width: 10em; */
             text-decoration: none;
             color: var(--main-color);
             text-align: left;
             padding: .75em;
         }
 
-        nav a:hover {
+        nav a:hover, nav button:hover {
             text-decoration: none;
             background-color: var(--third-color);
             color: var(--contrast-color);
@@ -227,7 +239,7 @@ footer a:hover {
         scroll-margin-top: 2em;
     }
 
-    #hoursSec {
+    #hours {
         grid-row-start: 6;
         grid-row-end: 7;
         background-color: var(--contrast-color);

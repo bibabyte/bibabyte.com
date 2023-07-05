@@ -17,3 +17,10 @@ var closeIcon = document.getElementById("menuTog");
             closeIcon.checked = false;
         }
       }
+
+
+// POPUP on menu click
+
+function hours() {
+    alert("du mardi au samedi 10h30-19h30");
+}
