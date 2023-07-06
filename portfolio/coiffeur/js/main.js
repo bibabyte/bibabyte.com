@@ -3,7 +3,7 @@
 
 
 // TO CLOSE THE MENU AFTER CLICING A SAME-PAGE-ITEM
-var menu = document.getElementById('menu');
+var menu = document.getElementById('nav-menu');
 
 var closeIcon = document.getElementById("menuTog");
 

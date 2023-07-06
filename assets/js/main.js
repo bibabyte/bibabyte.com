@@ -6,7 +6,7 @@
 // alert("yo");
 
 
-// TO CLOSE THE MENU AFTER CLICING A SAME-PAGE-ITEM
+// TO CLOSE THE MENU AFTER CLICKING A SAME-PAGE-ITEM
 var menu = document.getElementById('nav-menu');
 
 var closeIcon = document.getElementById("menuTog");

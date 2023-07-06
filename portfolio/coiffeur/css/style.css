@@ -65,7 +65,7 @@ footer a:hover {
     /* MENU */
 
 
-        #menu {
+        #nav-menu {
             grid-column-start: 1;
             grid-column-end: 3;
         }
@@ -86,7 +86,7 @@ footer a:hover {
             padding-left: 10px;
         }
 
-        #menu ol {
+        #nav-menu ol {
             font-size: 1em;
             border-radius: 0 0 10px 0;
         }
@@ -180,6 +180,25 @@ footer a:hover {
             width: 90vw;
             height: 90vh;
             align-items: center;
+            font-size: 1.2em;
+            font-weight: 600;
+            text-align: center;
+            background: var(--contrast-color);
+            border-radius: 10px;
+            border-color: var(--third-color);
+            border-width: .3em;
+        }
+
+        nav form p {
+            padding: 10vh 0 18vh 0;
+
+        }
+
+        nav form button {
+            text-align: center;
+            border: 1px var(--third-color);
+            margin: 0 0 1em 0;
+            color: var(--third-color);
         }
 
 /* NEXT SECTION */
@@ -187,7 +206,7 @@ footer a:hover {
     #mainContent {
         display: grid;
         grid-template-columns: 1em auto auto auto 1em;
-        grid-template-rows: minmax(3em, auto);
+        grid-template-rows: minmax(3em, auto);z
     }
 
     #welcome {
@@ -472,7 +491,7 @@ footer a:hover {
 /* laptops */
 @media  (min-width: 992px) {
     #welcome {
-        margin: 20em 10em 0 10em;
+        margin: 4em 10em 0 10em;
         border-radius: 10px;
         width: 75vw;
     }
