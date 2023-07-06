@@ -2,8 +2,10 @@
 // alert('why');
 
 
-// TO CLOSE THE MENU AFTER CLICING A SAME-PAGE-ITEM
+// TO CLOSE THE MENU AFTER CLICKING A SAME-PAGE-ITEM
 var menu = document.getElementById('nav-menu');
+var menuContent = document.getElementById('menuContent');
+var backgroundOverlay = document.getElementById('backgroundOverlay');
 
 var closeIcon = document.getElementById("menuTog");
 
@@ -16,7 +18,22 @@ var closeIcon = document.getElementById("menuTog");
         if (event.target instanceof HTMLAnchorElement){
             closeIcon.checked = false;
         }
-      }
+    }
+
+      // TO CLOSE THE MENU AFTER CLICKING OUTSIDE THE MENU
+
+    //   document.
+      
+    //   onclick = function(e){
+    //     if(e.target.id !== 'nav-menu'){
+    //       //element clicked wasn't the div; hide the div
+    //       menuContent.style.display = 'none';
+    //     }
+    //   };
+
+
+
+
 
 
 // POPUP on menu click
@@ -26,23 +43,28 @@ const showButton = document.getElementById("showDialog");
 const showButton2 = document.getElementById("showDialog2");
 const favDialog = document.getElementById("hours");
 const favDialog2 = document.getElementById("location");
-// const outputBox = document.querySelector("output");
-// const selectEl = favDialog.querySelector("select");
-// const confirmBtn = favDialog.querySelector("#confirmBtn");
 
-// "Show the dialog" button opens the <dialog> modally
 showButton.addEventListener("click", () => {
     favDialog.showModal();
 });
 
-favDialog.addEventListener("click", () => {
-    closeIcon.checked = false;
-})
+showButton2.addEventListener("click", showDialog);
+// showButton2.addEventListener("click", () => {
+//     favDialog2.showModal();
+// });
 
-showButton2.addEventListener("click", () => {
-    favDialog2.showModal();
-});
 
-favDialog2.addEventListener("click", () => {
+
+favDialog.addEventListener("click", menuClose);
+favDialog.addEventListener("touch", menuClose);
+
+favDialog2.addEventListener("click", menuClose);
+favDialog2.addEventListener("touch", menuClose);
+
+function menuClose() {
     closeIcon.checked = false;
-})
+}
+
+function showDialog(e) {
+    e.showModal();
+}
