@@ -1995,20 +1995,23 @@ input, select, textarea {
 
 	header.major {
 		text-align: center;
+		flex-direction: column;
+		justify-self: center;
+		align-items: center;
 	}
 
 		header.major h1, header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
 			position: relative;
 		}
 
-			header.major h1:after, header.major h2:after, header.major h3:after, header.major h4:after, header.major h5:after, header.major h6:after {
-				background: var(--after);
+			header.major h1:after, header.major h2:after, header.major h3:after, header.major h4:after, header.major h5:after, header.major h6:after, #links:after{
+				background: var(--main);
 				content: '';
 				display: block;
 				height: 2px;
-				margin: 0.75em auto 0 auto;
+				margin: .75em auto 0 auto;
 				position: relative;
-				width: 4em;
+				width: 5em;
 			}
 
 		header.major p {
@@ -3047,9 +3050,11 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 10vh 0 20vh 0 ;
+		padding: 0 0 20vh 0 ;
 		position: relative;
 		text-align: center;
+		display: flex;
+		justify-content: center;
 	}
 
 		#header:after {
@@ -3081,7 +3086,7 @@ input, select, textarea {
 
 			#header header h1 {
 				font-size: 3em;
-				line-height: 1.25em;
+				line-height: 30vh;
 				margin: 0;
 			}
 
