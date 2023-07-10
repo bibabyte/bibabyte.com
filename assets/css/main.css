@@ -160,6 +160,7 @@ input, select, textarea {
 			text-decoration: none;
 		}
 
+
 	strong, b {
 		color: var(--bold-text);
 		font-weight: 700;
@@ -3107,6 +3108,8 @@ input, select, textarea {
 			#header .container .button {
 				min-width: 12em;
 			}
+
+			
 
 		/* END HEADER */
 		
