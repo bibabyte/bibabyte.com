@@ -2441,15 +2441,19 @@ input, select, textarea {
 			ul.icons-grid li:nth-child(2n + 1) {
 				box-shadow: inset -1px 0 0 0 var(--after), 1px 0 0 0 var(--after);
 			}
+			.icons-grid li:nth-child(2n + 1) .sub-icon li {
+				box-shadow: none;
+			}
+
 
 			ul.icons-grid li:nth-child(2n + 3):before {
-				background: var(--after);
+				/* background: var(--after);
 				content: '';
 				display: block;
 				height: 2px;
 				margin-top: -3em;
 				position: absolute;
-				width: 100%;
+				width: 100%; */
 			}
 
 		ul.icons-grid:after {

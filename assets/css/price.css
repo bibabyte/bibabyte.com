@@ -1,0 +1,88 @@
+.price-details {
+    text-align: left;
+    margin-left: 1em;
+}
+
+ul.icons-grid li {
+    padding-left: .75em;
+    box-shadow: none;
+}
+
+ul.icons-grid li ol li{
+    display: block;
+	float: left;
+	padding: 3em 0;
+	width: 100%; 
+    list-style-type: decimal;
+}
+
+ul.icons-grid li ol ul li{
+    list-style-type: disc;
+}
+
+.main div.grid-list {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.icon ol {
+    margin: 0;
+    padding-left: 1em;
+    display: block;
+}
+
+.sub-icon {
+    padding-left: -2em;
+}
+
+.main div.grid-list .sub-icon li{
+    padding: 1em .75em 0 0;
+    display: list-item;
+    box-shadow: none;
+}
+.main div.grid-list .sub-icon ul li{
+    padding: 0 .75em 0 0;
+}
+
+
+
+/* HOVER EFFECT */
+
+.container a::before {
+    transform: scaleX(0);
+    transform-origin: 50%;
+}
+
+.container a:hover::before {
+    transform: scaleX(1);
+    transform-origin: 50%;  
+}
+
+.container a::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background-color: var(--main); */
+    background: var(--light);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: transform .3s;
+}
+
+.CTA {
+    font-size: 1em;
+	line-height: 1em;
+}
+
+.after-button {
+    /* padding-top: 3em; */
+}
