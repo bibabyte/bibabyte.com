@@ -1969,7 +1969,7 @@ input, select, textarea {
 	}
 
 	header p {
-		color: var(--text-light);
+		color: var(--text);
 		letter-spacing: 0.05em;
 		text-transform: uppercase;
 	}
@@ -3059,6 +3059,7 @@ input, select, textarea {
 		text-align: center;
 		display: flex;
 		justify-content: center;
+		height: 70vh;
 	}
 
 		#header:after {
@@ -3090,7 +3091,7 @@ input, select, textarea {
 
 			#header header h1 {
 				font-size: 3em;
-				line-height: 30vh;
+				line-height: 1.5em;
 				margin: 0;
 			}
 
