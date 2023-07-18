@@ -1997,7 +1997,7 @@ input, select, textarea {
 		}
 
 			header.major h1:after, header.major h2:after, header.major h3:after, header.major h4:after, header.major h5:after, header.major h6:after {
-				background: var(--after);
+				background: var(--background);
 				content: '';
 				display: block;
 				height: 2px;
@@ -2014,6 +2014,9 @@ input, select, textarea {
 			padding-top: 5em;
 		}
 
+		.CTA {
+			padding-top: 2em;
+		}
 
 /* Form */
 
@@ -3057,7 +3060,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		height: 100vh;
+		height: fit-content;
 		position: relative;
 		text-align: center;
 	}
