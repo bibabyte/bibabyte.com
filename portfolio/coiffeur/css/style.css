@@ -175,6 +175,16 @@ footer a:hover {
             grid-row: 9;
             height: 3em;
         }
+        #locationL {
+            grid-row: 13;
+            height: 3em;
+        }
+        #hoursL {
+            grid-row: 13;
+            height: 3em;
+            display: block;
+            /* top: -4em; */
+        }
 
         dialog {
             width: 90vw;
@@ -225,11 +235,12 @@ footer a:hover {
     #welcome a {
         text-decoration: none;
         color: inherit;
+        /* padding: 0 1em 0 1em; */
     }
 
-    #welcome a:hover p {
-        padding: 5px 0 5px 0;
-        background-color: var(--main-color);
+    #welcome a:hover  {
+        padding: 5px 1em 5px 1em;
+        background-color: var(--third-color);
         transition: ease-in-out .5s;
     }
 
@@ -245,7 +256,7 @@ footer a:hover {
         /* width: 100vw; */
     }
 
-    .one .two .three .four .five .six .seven {
+    .one .two .three .four .five .six .seven .eight {
         grid-row: span 1;
     }
 
@@ -263,6 +274,8 @@ footer a:hover {
 
     .seven { grid-row-start: 13;}
 
+    .eight { grid-row-start: 15;}
+
     #services {
         grid-row-start: 4;
         grid-row-end: 5;
@@ -273,11 +286,11 @@ footer a:hover {
     }
 
     #hours {
-        grid-row-start: 6;
+        /* grid-row-start: 6;
         grid-row-end: 7;
         background-color: var(--contrast-color);
         color: var(--third-color);
-        scroll-margin-top: 2em;
+        scroll-margin-top: 2em; */
     }
 
     #book {
@@ -286,12 +299,28 @@ footer a:hover {
         scroll-margin-top: 2em;
     }
 
-    #aboutUs {
-        grid-row-start: 10;
-        grid-row-end: 11;
+    #aboutUs, #location {
         background-color: var(--contrast-color);
         color: var(--third-color);
         scroll-margin-top: 2em;
+    }
+
+    #aboutUs p a, #location p a {
+        color: var(--third-color);
+    }
+
+    #aboutUs p a:hover, #location p a:hover {
+        color: var(--fourth-color);
+    }
+
+    .CTA #location a {
+        color: var(--contrast-color);
+    }
+
+
+    #aboutUs {
+        grid-row-start: 10;
+        grid-row-end: 11;
     }
 
     #other {
@@ -300,6 +329,17 @@ footer a:hover {
         scroll-margin-top: 2em;
     }
 
+    #location {
+        grid-row-start: 14;
+        grid-row-end: 15;
+    }
+
+    p.center {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 2.5em;
+    }
 
     /* TABLES */
 
@@ -490,6 +530,11 @@ footer a:hover {
 } */
 /* laptops */
 @media  (min-width: 992px) {
+    article {
+        padding: 3em 7em 3em 7em;
+        margin: 10em 10em 0 10em;
+        border-radius: 10px;
+    }
     #welcome {
         margin: 4em 10em 0 10em;
         border-radius: 10px;
@@ -509,6 +554,13 @@ footer a:hover {
         padding: 3em 7em 3em 7em;
         margin: 10em 10em 0 10em;
         border-radius: 10px;
+    }
+    #location  {
+        padding: 3em 7em 3em 7em;
+        margin: 10em 10em 0 10em;
+        border-radius: 10px;
+        grid-row-start: 13;
+        grid-row-end: 14;
     }
     footer {
         margin-top: 15em;
