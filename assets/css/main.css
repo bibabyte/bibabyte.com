@@ -3125,6 +3125,16 @@ input, select, textarea {
 
 		#header .major {
 			padding-bottom: 0;
+			display: block;
+
+		}
+		#header .major h1{
+			display: block;
+			top: 125px;
+		}
+
+		#header .major .home-page {
+			top: 0;
 		}
 
 		/* END HEADER */
