@@ -2772,6 +2772,19 @@ input, select, textarea {
 				color: var(--background);
 			}
 
+		input[type="submit"].subtile,
+		input[type="reset"].subtle,
+		input[type="button"].subtle,
+		button.subtle,
+		.button.subtle {
+			background-color: var(--light);
+			color: var(--main-color) !important;
+		}	
+
+		.button.subtle:hover {
+			color: var(--super-light) !important;
+		}
+
 		input[type="submit"].disabled, input[type="submit"]:disabled,
 		input[type="reset"].disabled,
 		input[type="reset"]:disabled,
