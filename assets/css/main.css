@@ -2322,6 +2322,7 @@ input, select, textarea {
 		margin: 2em;
 		padding: 5px;
 		width: 15em;
+		
 	}
 	
 		.portfolio .image {
@@ -2782,7 +2783,8 @@ input, select, textarea {
 		}	
 
 		.button.subtle:hover {
-			color: var(--super-light) !important;
+			color: #ffffff !important;
+			background-color: var(--link);
 		}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
