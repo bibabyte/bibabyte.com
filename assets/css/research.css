@@ -7,8 +7,10 @@
 	--dark: #942564;		/*pretty dark*/
 	--link: #f282c2;		/*same as background*/	
 	
-	--text: #6f7577;		/*greyish*/
-	--bold-text: #707577;	/*darker greyish*/
+	--text: #7b5e6f;		/*greyish pink*/
+	--text-light: #a8b0b3;	/*light grey*/
+	--bold-text: #6c4e5f;	/*darker greyish pink*/
+	--after: #eacedf;		/*grey-pink for section seperations*/
 
 } 
 

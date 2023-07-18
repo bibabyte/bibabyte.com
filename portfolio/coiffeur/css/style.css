@@ -64,6 +64,24 @@ footer a:hover {
     }
     /* MENU */
 
+    .menu #location #map {
+        height: auto;
+        text-align: center;
+    }
+
+    .menu #location #map-form {
+        height: fit-content;
+        transition-property: all;
+        transition-duration: .2sec;
+        transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .menu #location #map-form a:hover {
+
+        transition-property: all;
+        transition-duration: 120ms;
+        transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
 
         #nav-menu {
             grid-column-start: 1;
@@ -137,6 +155,18 @@ footer a:hover {
             width: 100%;
             padding: .75em;
             text-align: left;
+        }
+
+        nav #location p {
+            margin-top: 1em;
+            margin-bottom: 1em;
+            padding: 0;
+            height: fit-content;
+        }
+        nav #map-img {
+            height: 10em;
+            margin-top: 1em;
+            margin-bottom: 1em;
         }
         
         nav li, nav button {
@@ -444,6 +474,15 @@ footer a:hover {
         height: unset;
         width: 100vw;
     }
+
+    .menu #location p {
+        padding: 1em 1em 0 1em;
+    }
+
+    .menu #location #map {
+        padding: 0;
+    }
+
 }
 /* tablets portrait*/
 @media  (min-width: 600px) {

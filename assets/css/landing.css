@@ -1,0 +1,23 @@
+#img-hearts {
+
+}
+
+#links {
+    height: auto;
+    margin: 2em 0 30vh;
+}
+
+#links a {
+    text-decoration: none;
+    margin: 0 1em 0 1em;
+}
+
+#links::after {
+    margin: 2em auto 0 auto;
+    width: 50vw;
+}
+
+header.major h1::after {
+    margin: 2em auto 0 auto;
+    width: 50vw;
+}
