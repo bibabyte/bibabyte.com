@@ -35,13 +35,21 @@ ul.icons-grid li ol ul li{
     padding-left: -2em;
 }
 
-.main div.grid-list .sub-icon li{
+.main div.grid-list .sub-icon li {
     padding: 1em .75em 0 0;
     display: list-item;
     box-shadow: none;
 }
-.main div.grid-list .sub-icon ul li{
+.main div.grid-list .sub-icon li ul {
+    box-shadow: none;
+} 
+
+.main div.grid-list .sub-icon ul li {
     padding: 0 .75em 0 0;
+}
+
+ul.icons-grid li:nth-child(2n + 3):before {
+    content: none;
 }
 
 
