@@ -3,7 +3,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-// alert("yo");
+//  alert("yo");
 
 
 // TO CLOSE THE MENU AFTER CLICKING A SAME-PAGE-ITEM
@@ -20,7 +20,7 @@ var closeIcon = document.getElementById("menuTog");
         if (event.target instanceof HTMLAnchorElement){
             closeIcon.checked = false;
         }
-      }
+      };
 
 // TO CLOSE THE MENU AFTER CLICKING OUTSIDE THE MENU
 
