@@ -2017,6 +2017,7 @@ input, select, textarea {
 		.CTA {
 			padding-top: 2em;
 		}
+		
 
 /* Form */
 
@@ -2649,6 +2650,34 @@ input, select, textarea {
 			.learn_more a{
 				text-decoration: none;
 			}
+
+			.button.primary.landing {
+				font-size: .65em;
+				margin-top: 1em;
+				margin-bottom: 1.5em;
+				background-color: var(--main);
+			}
+				
+			.button.primary.landing:hover {
+					font-size: .65em;
+					margin-top: 1em;
+					margin-bottom: 1.5em;
+					background-color: var(--medium);
+				}
+
+			.button.primary.subtle.landing {
+				font-size: 1em;
+				margin-top: 1em;
+				background-color: var(--link);
+				color: #ffffff !important;
+			}
+			.button.primary.subtle.landing:hover {
+				font-size: 1em;
+				margin-top: 1em;
+				background-color: var(--main);
+				color: #ffffff !important;
+			}
+				
 
 	input[type="submit"],
 	input[type="reset"],
