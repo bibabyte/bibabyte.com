@@ -279,6 +279,11 @@ input, select, textarea {
 		text-align: right;
 	}
 
+	/* how discount text appears */
+	.discount {
+		color: var(--medium);
+	}
+
 /* Container */
 
 	.container {
@@ -3158,6 +3163,10 @@ input, select, textarea {
 		/* END HEADER */
 		
 
+p.discount {
+	margin: 0;
+}
+
 /* Footer */
 #footer {
 	min-height: 100vh;
@@ -3217,6 +3226,19 @@ input, select, textarea {
 					margin-left: 0;
 					padding-left: 0;
 				}
+
+
+/* Special Offer */
+#specialOffer {
+	position: absolute;
+	height: 20em;
+	margin-left: 4em;
+	right: 0;
+}
+
+
+
+
 /* Large */
 
 	@media screen and (max-width: 1680px) {
@@ -3293,7 +3315,10 @@ input, select, textarea {
 			}
 
 
+			
+
 	}
+
 
 /* Small */
 
@@ -3335,11 +3360,11 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				height: 80vh;
+				height: 60vh;
 			}
 
 				#header:after {
-					height: 80vh;
+					height: 30vh;
 				}
 
 				#header header {
@@ -3364,7 +3389,13 @@ input, select, textarea {
 				padding: 3em 1.5em 1em 1.5em ;
 			}
 
+			#specialOffer {
+				height: 15em;
+				top: 30vh;
+			}
 	}
+
+
  
 /* XSmall */
 
