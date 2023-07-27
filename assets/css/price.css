@@ -54,6 +54,8 @@ ul.icons-grid li:nth-child(2n + 3):before {
 
 
 
+
+
 /* HOVER EFFECT */
 
 .container a::before {
@@ -94,4 +96,31 @@ ul.icons-grid li:nth-child(2n + 3):before {
 
 .after-button {
     /* padding-top: 3em; */
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+    /* .maintenance {
+        position: relative;
+        top: 5em;
+    }
+
+    .why {
+        position: relative;
+        top: 5em;
+    } */
+
+    li::after {
+        box-shadow: none !important;
+    }
+
+    ul.icons-grid li ol li{
+        display: block;
+        /* float: left; */
+        padding: 3em 0;
+        width: 100%; 
+        list-style-type: decimal;
+    }
 }
