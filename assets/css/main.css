@@ -93,6 +93,8 @@ input, select, textarea {
 	appearance: none;
 }
 
+
+
 /* Basic */
 
 	html {
@@ -200,6 +202,10 @@ input, select, textarea {
 	h4 {
 		font-size: 0.9em;
 		line-height: 1.5em;
+	}
+
+	h4:hover {
+		color: #b62e7b;
 	}
 
 	h5 {
@@ -2021,6 +2027,13 @@ input, select, textarea {
 
 		.CTA {
 			padding-top: 2em;
+		}
+
+		.example {
+			margin-top: 2em;
+			padding-top: 2em;
+			font-size: 1.5em;
+			margin: 2em .5em 0 0;
 		}
 		
 
