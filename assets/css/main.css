@@ -3123,7 +3123,7 @@ header.major .no-underline::after {
 		#header:after {
 			content: '';
 			display: inline-block;
-			height: 100vh;
+			height: 75vh;
 			vertical-align: middle;
 		}
 
@@ -3186,6 +3186,11 @@ header.major .no-underline::after {
 
 p.discount {
 	margin: 0;
+}
+
+
+.icons-grid{
+	margin-bottom: 4em;
 }
 
 /* Footer */
@@ -3257,6 +3262,10 @@ p.discount {
 	right: 0;
 }
 
+#header {
+	height: 70vh;
+}
+
 
 
 
@@ -3269,14 +3278,44 @@ p.discount {
 			body, input, select, textarea {
 				font-size: 12pt;
 			}
+		
 
 	}
+
+	
+/* Medium-Large */
+	@media screen and (max-width: 1200){
+		#logo  {
+			top: 2em;
+		}
+
+		.container {
+			padding-bottom: 2em !important;
+		}
+
+		#pre {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+
+		
+		
+	}
+
 
 /* Medium */
 
 	@media screen and (max-width: 980px) {
 
 		/* Main BG */
+
+		.container {
+			padding-bottom: 2em !important;
+		}
+		
+		#logo  {
+			top: 2em;
+		}
 
 		html {
 			background-color: var(--background);
