@@ -2545,6 +2545,9 @@ input, select, textarea {
 			}
 
 		@media screen and (max-width: 480px) {
+			#header {
+				margin-top: 1em;
+			}
 
 			ul.actions:not(.fixed) {
 				-moz-flex-direction: column;
@@ -3420,6 +3423,17 @@ p.discount {
 				min-width: 320px;
 			}
 
+			.myPart {
+				padding-top: 1em;
+			}
+
+			#portfolio {
+				padding: 2em 0;
+			}
+			.portfolio {
+				margin: 1em 0;
+			}
+
 		/* List */
 
 			ul.actions {
@@ -3458,6 +3472,11 @@ p.discount {
 				width: 100%;
 			}
 
+
+			.options {
+				margin: 0;
+			}
+
 				ul.icons-grid li:first-child {
 					box-shadow: none !important;
 					margin-top: 0;
@@ -3479,7 +3498,7 @@ p.discount {
 			input[type="button"],
 			button,
 			.button {
-				padding: 0;
+				padding: 0 .5em;
 			}
 
 				input[type="submit"].icon,
