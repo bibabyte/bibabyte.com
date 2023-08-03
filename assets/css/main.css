@@ -93,6 +93,9 @@ input, select, textarea {
 	appearance: none;
 }
 
+header.major .no-underline::after {
+	background: none !important;
+}
 
 
 /* Basic */
@@ -3434,6 +3437,11 @@ p.discount {
 				margin: 1em 0;
 			}
 
+			.container {
+				padding-bottom: 3em;
+			}
+			
+
 		/* List */
 
 			ul.actions {
@@ -3498,7 +3506,7 @@ p.discount {
 			input[type="button"],
 			button,
 			.button {
-				padding: 0 .5em;
+				padding: 0 1em;
 			}
 
 				input[type="submit"].icon,
@@ -3518,7 +3526,7 @@ p.discount {
 		/* Main */
 
 			.main .container {
-				padding: 3em 1em 1em 1em ;
+				padding: 3em 1em 4.5em 1em ;
 			}
 
 				.main .container .image.primary:first-child {
