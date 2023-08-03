@@ -2992,6 +2992,8 @@ header.major .no-underline::after {
 		cursor: pointer;
 		text-align: right;
 		color: var(--main);
+		position: absolute;
+		right: 0;
 	}
 
 	#noHam {
@@ -3426,6 +3428,29 @@ p.discount {
 				min-width: 320px;
 			}
 
+			input[type="checkbox"]:checked ~ ol {
+				width: 80vw;
+			}
+
+			.menu {
+				font-size: .9em;
+			}
+
+			#nav_menu {
+				width: 80vw;
+			}
+
+			nav a:hover {
+				font-size: 1.6em;
+			}
+
+			.menu li {
+				width: 80vw;
+			}
+			nav li a {
+				width: 80vw;
+			}
+
 			.myPart {
 				padding-top: 1em;
 			}
@@ -3507,6 +3532,7 @@ p.discount {
 			button,
 			.button {
 				padding: 0 1em;
+				margin: 1em 0;
 			}
 
 				input[type="submit"].icon,
