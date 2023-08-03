@@ -3266,6 +3266,9 @@ p.discount {
 	height: 70vh;
 }
 
+.goto-next {
+	display: none !important;
+}
 
 
 
@@ -3298,6 +3301,9 @@ p.discount {
 			padding-bottom: 0;
 		}
 
+		.goto-next {
+			display: inline !important;
+		}
 		
 		
 	}
@@ -3313,7 +3319,7 @@ p.discount {
 			padding-bottom: 2em !important;
 		}
 		
-		#logo  {
+		.lower  {
 			top: 2em;
 		}
 
@@ -3330,6 +3336,9 @@ p.discount {
 				display: none;
 			}
 
+			.goto-next {
+				display: none !important;
+			}
 		/* Main */
 
 			.main .image.primary {
@@ -3443,6 +3452,31 @@ p.discount {
 					display: none;
 				}
 
+		/* NAV */
+
+			input[type="checkbox"]:checked ~ ol {
+				width: 60vw;
+			}
+
+			.menu {
+				font-size: 1em;
+			}
+
+			#nav_menu {
+				width: 80vw;
+			}
+
+			nav a:hover {
+				font-size: 1.8em;
+			}
+
+			.menu li {
+				width: 60vw;
+			}
+			nav li a {
+				width: 60vw;
+			}
+
 		/* Footer */
 
 			#footer .container {
@@ -3467,28 +3501,7 @@ p.discount {
 				min-width: 320px;
 			}
 
-			input[type="checkbox"]:checked ~ ol {
-				width: 80vw;
-			}
-
-			.menu {
-				font-size: .9em;
-			}
-
-			#nav_menu {
-				width: 80vw;
-			}
-
-			nav a:hover {
-				font-size: 1.6em;
-			}
-
-			.menu li {
-				width: 80vw;
-			}
-			nav li a {
-				width: 80vw;
-			}
+			
 
 			.myPart {
 				padding-top: 1em;
@@ -3505,6 +3518,32 @@ p.discount {
 				padding-bottom: 3em;
 			}
 			
+		/* NAV */
+
+				input[type="checkbox"]:checked ~ ol {
+					width: 80vw;
+				}
+	
+				.menu {
+					font-size: .9em;
+				}
+	
+				#nav_menu {
+					width: 80vw;
+				}
+	
+				nav a:hover {
+					font-size: 1.6em;
+				}
+	
+				.menu li {
+					width: 80vw;
+				}
+				nav li a {
+					width: 80vw;
+				}
+
+
 
 		/* List */
 
